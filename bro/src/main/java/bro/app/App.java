@@ -3,6 +3,7 @@ package bro.app;
 import org.deeplearning4j.models.sequencevectors.graph.primitives.Vertex;
 import org.deeplearning4j.nn.conf.ComputationGraphConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration.Builder;
+import org.nd4j.shade.guava.graph.GraphBuilder;
 
 public class App {
 	
@@ -19,10 +20,10 @@ public class App {
 //	System.out.println(2);
 		
 		Builder builder = new Builder();
-		
+//		
 		ComputationGraphConfiguration graph = new ComputationGraphConfiguration.GraphBuilder(builder)
 			.addInputs("inputLayer")
-			.setOutputs("outputLayer")
+			.setOutputs("bro")
 			.build();
 	}
 	
